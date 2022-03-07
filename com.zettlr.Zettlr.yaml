@@ -33,7 +33,7 @@ modules:
     buildsystem: simple
     build-commands:
       - chmod +x Zettlr-2.2.3-*.AppImage
-      - ./Zettlr-2.2.3-*.AppImage --appimage-extract  
+      - ./Zettlr-2.2.3-*.AppImage --appimage-extract
       - mkdir -p "${FLATPAK_DEST}/zettlr"
       - cp -r squashfs-root/* "${FLATPAK_DEST}/zettlr"
       - mv "${FLATPAK_DEST}/zettlr/usr/share/icons" "${FLATPAK_DEST}/share"
@@ -45,28 +45,30 @@ modules:
       - install -D  com.zettlr.Zettlr.metainfo.xml -t "${FLATPAK_DEST}/share/metainfo/"
     sources:
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.3/Zettlr-2.2.3-x86_64.AppImage
-        sha256: 0574ad1a10845e9411c8b8dc4b4d0233f348fcd5512a92d3956f17879d5f57cc
-        only-arches: 
+        url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.4/Zettlr-2.2.4-x86_64.AppImage
+        sha256: 9735dc893a3252c1e5f1657422f74fe91da961e80beff1b4e183cb6fa81b0a04
+        only-arches:
           - x86_64
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Zettlr/Zettlr/releases/latest
-          version-query: ".tag_name | sub(\"v\"; \"\")"
-          url-query: ".assets[] | select(.name==\"Zettlr-\" + $version + \"-x86_64.AppImage\") | .browser_download_url"
+          version-query: .tag_name | sub("v"; "")
+          url-query: .assets[] | select(.name=="Zettlr-" + $version + "-x86_64.AppImage")
+            | .browser_download_url
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.3/Zettlr-2.2.3-arm64.AppImage
-        sha256: 452f8efc8be57bd420125ef01b32c7a1dd9e8a3d827b347eab69ce30d0304a29
+        url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.4/Zettlr-2.2.4-arm64.AppImage
+        sha256: 77b46654dedd08df087d21e5ad7e5cbc46ead01ab8235e9af08fcb816063948a
         only-arches:
           - aarch64
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Zettlr/Zettlr/releases/latest
-          version-query: ".tag_name | sub(\"v\"; \"\")"
-          url-query: ".assets[] | select(.name==\"Zettlr-\" + $version + \"-arm64.AppImage\") | .browser_download_url"
+          version-query: .tag_name | sub("v"; "")
+          url-query: .assets[] | select(.name=="Zettlr-" + $version + "-arm64.AppImage")
+            | .browser_download_url
       - type: script
         dest-filename: start-zettlr.sh
         commands:
-          - 'zypak-wrapper /app/zettlr/Zettlr "$@"'
+          - zypak-wrapper /app/zettlr/Zettlr "$@"
       - type: file
         path: com.zettlr.Zettlr.metainfo.xml

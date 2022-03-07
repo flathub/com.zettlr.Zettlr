@@ -7,7 +7,7 @@
   
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   <url type="homepage">https://www.zettlr.com</url>
   
   <description>
@@ -45,6 +45,7 @@
     </screenshot>
   </screenshots>
   <releases>
+        <release version="2.2.4" date="2022-03-05"/>
         <release version="v2.2.3" date="2021-12-18">
             <description>
                 <p>Today comes a smaller update that fixes a few annoying bugs that came up after the last release, and it contains improvements to the graph view. Most notably, it should rebuild less frequently and much faster. Also, we finally fixed a bug that was around for a little bit longer and that prevented exports of reveal.js presentations in stylesheets other than black.</p>
