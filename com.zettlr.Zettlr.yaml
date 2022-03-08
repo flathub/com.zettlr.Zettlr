@@ -32,8 +32,8 @@ modules:
   - name: zettlr
     buildsystem: simple
     build-commands:
-      - chmod +x Zettlr-2.2.3-*.AppImage
-      - ./Zettlr-2.2.3-*.AppImage --appimage-extract
+      - chmod +x Zettlr*.AppImage
+      - ./Zettlr*.AppImage --appimage-extract
       - mkdir -p "${FLATPAK_DEST}/zettlr"
       - cp -r squashfs-root/* "${FLATPAK_DEST}/zettlr"
       - mv "${FLATPAK_DEST}/zettlr/usr/share/icons" "${FLATPAK_DEST}/share"
