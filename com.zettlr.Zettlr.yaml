@@ -45,8 +45,8 @@ modules:
       - install -D  com.zettlr.Zettlr.metainfo.xml -t "${FLATPAK_DEST}/share/metainfo/"
     sources:
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.4/Zettlr-2.2.4-x86_64.AppImage
-        sha256: 9735dc893a3252c1e5f1657422f74fe91da961e80beff1b4e183cb6fa81b0a04
+        url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.5/Zettlr-2.2.5-x86_64.AppImage
+        sha256: 28fde5b740b0793d5ffc14772299e3c02a8dbe115bae9cfd28b83a2bc38cb3e2
         only-arches:
           - x86_64
         x-checker-data:
@@ -56,8 +56,8 @@ modules:
           url-query: .assets[] | select(.name=="Zettlr-" + $version + "-x86_64.AppImage")
             | .browser_download_url
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.4/Zettlr-2.2.4-arm64.AppImage
-        sha256: 77b46654dedd08df087d21e5ad7e5cbc46ead01ab8235e9af08fcb816063948a
+        url: https://github.com/Zettlr/Zettlr/releases/download/v2.2.5/Zettlr-2.2.5-arm64.AppImage
+        sha256: d5045c148962ef49a2867637375ca506057e75884f87e84662e170dbf21573f1
         only-arches:
           - aarch64
         x-checker-data:
