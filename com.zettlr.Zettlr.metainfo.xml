@@ -9,6 +9,11 @@
   <project_license>GPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
   <url type="homepage">https://www.zettlr.com</url>
+  <url type="bugtracker">https://github.com/Zettlr/Zettlr/issues</url>
+  <url type="donation">https://www.patreon.com/zettlr</url>
+  <url type="help">https://docs.zettlr.com</url>
+  <url type="contact">https://zettlr.com/contact</url>
+  <url type="translate">https://translate.zettlr.com/</url>
   
   <description>
     <p>Writing is an essential part of our everyday life. Why make it complicated? Zettlr redefines what writing means. It is slim, fast, and versatile. Focus on what matters to you. Publish, not perish.</p>
