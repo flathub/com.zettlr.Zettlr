@@ -1,9 +1,9 @@
 app-id: com.zettlr.Zettlr
 runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
-runtime-version: '21.08'
+runtime-version: '22.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: '21.08'
+base-version: '22.08'
 rename-icon: Zettlr
 command: start-zettlr
 separate-locales: false
@@ -49,8 +49,8 @@ modules:
       - install -D  com.zettlr.Zettlr.metainfo.xml -t "${FLATPAK_DEST}/share/metainfo/"
     sources:
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v2.3.0/Zettlr-2.3.0-x86_64.AppImage
-        sha256: de9f513ba8698a8605ea474657effd82ea2ac5a3c2246ef73acacdebd4874079
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.0.0-beta.1/Zettlr-3.0.0-beta.1-x86_64.AppImage
+        sha256: 700f0720b9812357d9d42bb74336896f298607907b11660def99d65f64d2665e 
         only-arches:
           - x86_64
         x-checker-data:
@@ -60,8 +60,8 @@ modules:
           url-query: .assets[] | select(.name=="Zettlr-" + $version + "-x86_64.AppImage")
             | .browser_download_url
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v2.3.0/Zettlr-2.3.0-arm64.AppImage
-        sha256: 3cdc9b72abd2c23a0107b39a8c19a058fc43fe880b5a2c9717eabf63e361233a
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.0.0-beta.1/Zettlr-3.0.0-beta.1-arm64.AppImage
+        sha256: fbbd433bf589edb5bf203fe525f0490cbccc7c8ad07875382741939ce4dffdc0
         only-arches:
           - aarch64
         x-checker-data:
