@@ -59,7 +59,7 @@ modules:
           version-query: .tag_name | sub("v"; "")
           url-query: .assets[] | select(.name=="Zettlr-" + $version + "-x86_64.AppImage") | .browser_download_url
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v3.0.0-beta.5/Zettlr-3.0.0-beta.7-arm64.AppImage
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.0.0-beta.7/Zettlr-3.0.0-beta.7-arm64.AppImage
         sha256: b15b5e57a12e9f88eca257ec3e6eb21d5fe00331c99de0f0db4a15d6bd2b9fa9
         only-arches:
           - aarch64
