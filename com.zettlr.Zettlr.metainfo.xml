@@ -14,6 +14,7 @@
   <url type="help">https://docs.zettlr.com</url>
   <url type="contact">https://zettlr.com/contact</url>
   <url type="translate">https://translate.zettlr.com/</url>
+  <developer_name>Zettlr</developer_name>
   
   <description>
     <p>Writing is an essential part of our everyday life. Why make it complicated? Zettlr redefines what writing means. It is slim, fast, and versatile. Focus on what matters to you. Publish, not perish.</p>
@@ -50,6 +51,7 @@
     </screenshot>
   </screenshots>
   <releases>
+        <release version="3.0.5" date="2024-02-07"/>
         <release version="3.0.3" date="2023-11-25"/>
         <release version="3.0.2" date="2023-10-06"/>
         <release version="3.0.1" date="2023-09-19"/>

@@ -15,7 +15,6 @@ finish-args:
   - --talk-name=org.freedesktop.Notifications
   - --talk-name=org.gtk.vfs.*
   - --filesystem=xdg-documents
-  - --filesystem=xdg-data/Trash
   - --filesystem=/tmp
   - --device=dri
   - --env=PATH=/app/texlive/bin/x86_64-linux:/app/texlive/bin/aarch64-linux:/app/bin:/usr/bin # required to find texlive binaries
@@ -49,8 +48,8 @@ modules:
       - install -D  com.zettlr.Zettlr.metainfo.xml -t "${FLATPAK_DEST}/share/metainfo/"
     sources:
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v3.0.3/Zettlr-3.0.3-x86_64.AppImage
-        sha256: d4aec61dbf6f7ca79f4095ecf20569330092047ca9e4692bda101933328cd5dd
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.0.5/Zettlr-3.0.5-x86_64.AppImage
+        sha256: eee79b123fecb261ec8c4281ba1aa98a577dcce385833c5fa2bfa129b039c079
         only-arches:
           - x86_64
         x-checker-data:
@@ -60,8 +59,8 @@ modules:
           url-query: .assets[] | select(.name=="Zettlr-" + $version + "-x86_64.AppImage")
             | .browser_download_url
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v3.0.3/Zettlr-3.0.3-arm64.AppImage
-        sha256: d16ae4b6cc9c023c4503dacbb993a247a1a5d1b12714c8c7474a3c01c4666ff4
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.0.5/Zettlr-3.0.5-arm64.AppImage
+        sha256: cec833ca56c2bd355e5ab08247b71da62f31e3604c44e596b29ae50848251013
         only-arches:
           - aarch64
         x-checker-data:
