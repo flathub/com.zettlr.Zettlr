@@ -16,7 +16,6 @@ finish-args:
   - --talk-name=org.gtk.vfs.*
   - --filesystem=xdg-documents
   - --filesystem=xdg-data/Trash
-  - --filesystem=/tmp
   - --device=dri
   - --env=PATH=/app/texlive/bin/x86_64-linux:/app/texlive/bin/aarch64-linux:/app/bin:/usr/bin # required to find texlive binaries
   - --env=GTK_USE_PORTAL=1
