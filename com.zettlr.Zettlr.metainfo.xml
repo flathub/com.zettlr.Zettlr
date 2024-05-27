@@ -52,7 +52,10 @@
   </screenshots>
   <releases>
         <release version="3.1.1" date="2024-05-05">
-            <description></description>
+            <description>
+                <p>Hotfix for crashes on Linux</p>
+                <p>Sometimes, waiting to update something is a smart idea. This time, we were not that smart and bumped the underlying Electron framework to version 30, which unfortunately made running Zettlr 3.1.0 on most Linux systems impossible. With this patch, we rolled back Electron to a working version. Apologies to all Linux users, we still love you!</p>
+            </description>
         </release>
         <release version="3.0.5" date="2024-02-07"/>
         <release version="3.0.3" date="2023-11-25"/>
@@ -62,7 +65,7 @@
         <release version="2.3.0" date="2022-06-08"/>
         <release version="2.2.6" date="2022-06-08"/>
         <release version="2.2.4" date="2022-03-05"/>
-        <release version="v2.2.3" date="2021-12-18">
+        <release version="2.2.3" date="2021-12-18">
             <description>
                 <p>Today comes a smaller update that fixes a few annoying bugs that came up after the last release, and it contains improvements to the graph view. Most notably, it should rebuild less frequently and much faster. Also, we finally fixed a bug that was around for a little bit longer and that prevented exports of reveal.js presentations in stylesheets other than black.</p>
                 <p>GUI and Functionality</p>
