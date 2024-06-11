@@ -51,6 +51,9 @@
     </screenshot>
   </screenshots>
   <releases>
+        <release version="3.2.0" date="2024-06-11">
+            <description></description>
+        </release>
         <release version="3.1.1" date="2024-05-05">
             <description>
                 <p>Hotfix for crashes on Linux</p>
