@@ -59,8 +59,8 @@ modules:
           url-query: .assets[] | select(.name=="Zettlr-" + $version + "-x86_64.AppImage")
             | .browser_download_url
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v3.1.1/Zettlr-3.1.1-arm64.AppImage
-        sha256: 8864620d5e22baff683bdc9bccf21efb195e79c28cb7d351b19ce4b66737ef8a
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.2.0/Zettlr-3.2.0-arm64.AppImage
+        sha256: 5f60dc3b471fbb26b1156f152c1f3c90872d75165e6c4727d904e60db1a490bf
         only-arches:
           - aarch64
         x-checker-data:
