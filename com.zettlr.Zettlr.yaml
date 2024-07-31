@@ -48,8 +48,8 @@ modules:
       - install -D  com.zettlr.Zettlr.metainfo.xml -t "${FLATPAK_DEST}/share/metainfo/"
     sources:
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v3.1.1/Zettlr-3.1.1-x86_64.AppImage
-        sha256: fe37a6917fc8335c612ed7d8ea773eb82de573b8ce963a9417b2421d2cc0e6c5
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.2.0/Zettlr-3.2.0-x86_64.AppImage
+        sha256: 82db43196149fd598ecaa80e48a9c2aaa3ed3532897757e60e96b46405f7c5cf
         only-arches:
           - x86_64
         x-checker-data:
