@@ -1,9 +1,9 @@
 app-id: com.zettlr.Zettlr
 runtime: org.freedesktop.Platform
 sdk: org.freedesktop.Sdk
-runtime-version: '23.08'
+runtime-version: '24.08'
 base: org.electronjs.Electron2.BaseApp
-base-version: '23.08'
+base-version: '24.08'
 rename-icon: Zettlr
 command: start-zettlr
 separate-locales: false
@@ -22,7 +22,7 @@ finish-args:
   - --env=ELECTRON_TRASH=gio
 add-extensions:
   org.freedesktop.Sdk.Extension.texlive:
-    version: '23.08'
+    version: '24.08'
     directory: texlive
     no-autodownload: true
 
@@ -48,8 +48,8 @@ modules:
       - install -D  com.zettlr.Zettlr.metainfo.xml -t "${FLATPAK_DEST}/share/metainfo/"
     sources:
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v3.2.1/Zettlr-3.2.1-x86_64.AppImage
-        sha256: b54569f027e6c5b69c06cca25a9e177e3203947f6d559aa18dc675a068f19988
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.2.2/Zettlr-3.2.2-x86_64.AppImage
+        sha256: 713e4d07dc86b4f6d80da5bb45d531a3a5a1747c31ed00daf408bdf1331585b6
         only-arches:
           - x86_64
         x-checker-data:
@@ -59,8 +59,8 @@ modules:
           url-query: .assets[] | select(.name=="Zettlr-" + $version + "-x86_64.AppImage")
             | .browser_download_url
       - type: file
-        url: https://github.com/Zettlr/Zettlr/releases/download/v3.2.1/Zettlr-3.2.1-arm64.AppImage
-        sha256: 3b50a3f8dd259634465333ee8290bc2113c831e84702a9ed5c9882e98699a293
+        url: https://github.com/Zettlr/Zettlr/releases/download/v3.2.2/Zettlr-3.2.2-arm64.AppImage
+        sha256: f9cca10f02366926760fa8e357624ca4558ecdb5097084906dfb1b7965d95d94
         only-arches:
           - aarch64
         x-checker-data:
