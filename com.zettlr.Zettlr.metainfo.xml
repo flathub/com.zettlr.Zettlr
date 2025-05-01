@@ -9,6 +9,7 @@
   <project_license>GPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
   <url type="homepage">https://www.zettlr.com</url>
+  <url type="vcs-browser">https://github.com/Zettlr/Zettlr</url>
   <url type="bugtracker">https://github.com/Zettlr/Zettlr/issues</url>
   <url type="donation">https://www.patreon.com/zettlr</url>
   <url type="help">https://docs.zettlr.com</url>
