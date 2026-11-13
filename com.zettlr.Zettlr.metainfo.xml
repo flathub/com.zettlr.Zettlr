@@ -52,11 +52,15 @@
     </screenshot>
   </screenshots>
   <releases>
-        <release version="4.9.0" date="2026-10-25">
+        <release version="4.10.0" date="2026-11-13">
+            <url type="details">https://github.com/Zettlr/Zettlr/releases/tag/v4.10.0</url>
             <description></description>
         </release>
+        <release version="4.9.0" date="2026-10-25">
+            <description/>
+        </release>
         <release version="4.8.0" date="2026-09-18">
-            <description></description>
+            <description/>
         </release>
         <release version="4.7.0" date="2026-07-26">
             <description/>
